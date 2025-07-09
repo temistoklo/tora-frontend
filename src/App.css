@@ -1,25 +1,67 @@
-import React from "react";
-import "./App.css";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
-function App() {
-  return (
-    <div className="app-container">
-      <div className="content">
-        <h1>TORA Global Token</h1>
-        <p className="tagline">The future of borderless, stable, and fair money.</p>
-        <button className="buy-button">BUY TORA Global</button>
-
-        <div className="description">
-          <h2>What is TORA Global?</h2>
-          <p>
-            TORA Global is a next-generation cryptocurrency designed to replace meme coins and unstable tokens 
-            with real financial utility. It is built for everyday use, investor rewards, and global compatibility. 
-            Join the early movement while the ICO price is still low – only $0.05 per token!
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1623058050170-bb9b1d0a7d82?auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+  color: white;
 }
 
-export default App;
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+}
+
+.glass-box {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  text-align: center;
+  max-width: 700px;
+}
+
+.title {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.buy-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  border: none;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s;
+  margin-bottom: 30px;
+}
+
+.buy-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.description h2 {
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 16px;
+  color: #ddd;
+}
+
