@@ -5,7 +5,7 @@ body, html {
   padding: 0;
   font-family: 'Orbitron', sans-serif;
   height: 100%;
-  background-image: url("https://images.unsplash.com/photo-1623058050170-bb9b1d0a7d82?auto=format&fit=crop&w=1950&q=80");
+  background-image: url('./assets/background.jpg');
   background-size: cover;
   background-position: center;
   color: white;
