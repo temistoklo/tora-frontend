@@ -4,7 +4,9 @@ import "./App.css";
 function App() {
   return (
     <div className="app-wrapper">
-      <div className="header">
+
+      {/* Gornji desni linkovi */}
+      <div className="header-links">
         <a href="https://x.com/bullcapital2024" target="_blank" rel="noopener noreferrer">
           🧠 X
         </a>
@@ -13,34 +15,28 @@ function App() {
         </a>
       </div>
 
+      {/* Glavni sadržaj */}
       <div className="card">
-        <h1>
-          🚀 TORA Global Token
-        </h1>
-        <p className="tagline">
-          The future of borderless, stable, and fair money.
-        </p>
+        <h1 className="title">🚀 TORA Global Token</h1>
+        <p className="subtitle">A new era of borderless, secure and fair money.</p>
 
         <a
-          href="https://sepolia.etherscan.io/address/0x4782d1765dEC4e3fD98Ed6A15Aced434Bbd40AD3"
+          href="https://basescan.org/address/0x4782d1765dEC4e3fD98Ed6A15Aced434Bbd40AD3"
           target="_blank"
           rel="noopener noreferrer"
         >
           <button className="buy-button">BUY TORA Global</button>
         </a>
 
-        <div className="description">
-          <h2>🌍 What is TORA Global?</h2>
-          <p>
-            TORA is a next-generation cryptocurrency created to replace meme coins and
-            unstable tokens. Designed for real-world use, investor rewards, and long-term
-            stability. ICO price: <strong>$0.05</strong>. Join now before the rocket lifts off! 🚀
-          </p>
-        </div>
+        <h2 className="info-title">🌍 What is TORA?</h2>
+        <p className="info-text">
+          TORA is a revolutionary digital currency designed to eliminate useless meme tokens
+          and unstable assets. Built for real-world adoption, it offers long-term value,
+          investor rewards, and transparency. Be among the first to join – ICO price: <strong>$0.05</strong>.
+        </p>
       </div>
     </div>
   );
 }
 
 export default App;
-
