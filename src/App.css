@@ -5,9 +5,7 @@ body, html {
   padding: 0;
   font-family: 'Orbitron', sans-serif;
   height: 100%;
-  background-image: url('./assets/background.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: #0d0d0d;
   color: white;
 }
 
@@ -18,16 +16,25 @@ body, html {
   height: 100vh;
   backdrop-filter: blur(3px);
   padding: 20px;
+  position: relative;
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   border-radius: 16px;
   padding: 30px;
   text-align: center;
   max-width: 600px;
   width: 100%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .title {
@@ -49,22 +56,27 @@ body, html {
   color: white;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .buy-button:hover {
   transform: scale(1.05);
 }
 
-.info-title {
-  font-size: 1.4rem;
-  color: #00f2ff;
-  margin-bottom: 10px;
+.token-input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
 }
 
-.info-text {
-  font-size: 1rem;
-  line-height: 1.5;
+.token-price {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #00f2ff;
 }
 
 .header-links {
@@ -89,11 +101,21 @@ body, html {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.wallet-status {
+  background: rgba(0, 255, 0, 0.1);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.description {
+  margin-top: 30px;
+}
+
 @media (max-width: 480px) {
   .title {
     font-size: 1.8rem;
   }
-  .subtitle, .info-text {
+  .subtitle, .token-price {
     font-size: 0.9rem;
   }
   .buy-button {
