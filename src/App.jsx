@@ -18,7 +18,7 @@ const ICO_ABI = [
 function App() {
   const [account, setAccount] = useState(null);
   const [ethPrice, setEthPrice] = useState(null);
-  const [amount, setAmount] = useState(1); // default 1 token
+  const [amount, setAmount] = useState(1);
   const [userBalance, setUserBalance] = useState(0);
 
   useEffect(() => {
